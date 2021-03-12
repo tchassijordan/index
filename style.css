@@ -1,0 +1,335 @@
+* {
+	margin: 0;
+	user-select: none;
+}
+body {
+	background-color: black;
+}
+.nav {
+	
+	background-color:  darkgray;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 50;
+	float: left;
+	
+}
+.nav a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 5px;
+	color: whitesmoke;
+	font-size: 18;
+	float: left;
+}
+.nav a:hover {
+	background-color: dimgrey;
+}
+.nav a:first-child ul{
+	display: none;
+	background-color: black;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-size: 18;
+}
+.nav a:first-child:hover ul {
+	display: block;
+	
+}
+ul li:hover {
+	background-color: dimgrey;
+}
+.search-container {
+	position: absolute;
+	top: 9;
+	float: right;
+	text-align: center;
+	transition: 0.4s;
+	right: 5;
+	
+}
+.search-box {
+	position: relative;
+	width: 450px;
+	height: 100px;
+}
+.text {
+	position: absolute;
+	width: 0px;
+	height: 25px;
+	right: 13;
+	border: 3px solid black;
+	border-radius: 50px;
+	padding: 0 5px;
+	font-size: 16px;
+	color: black;
+	transition: all 0.4s;
+}
+.search-box .search-botton button {
+	position: absolute;
+	height: 30px;
+	color: white;
+	cursor: pointer;
+	right: 0;
+	border-radius: 50px; 
+	background-color: black; 
+	border: 2px;
+	top: -3;
+}
+
+.slideshow {
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	top: 50;
+	width: 100%;
+	height: 150px;
+}
+ .slides {
+	display: block;
+	 height: 100%;
+	}
+.slides img {
+	 height: 100%;
+	}
+.fade {
+	animation-name: fade;
+	animation-duration: 0.6s ease;
+}
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.dots-container {
+	position: absolute;
+	display: inline-block;
+	align-items: center;
+	padding: 0px;
+	border-radius: 20px;
+	background-color: white;
+	top: 120;
+	margin-left: 50%;
+	height: 17;
+}
+
+.dots-container .dots {
+	top: 0;
+	display: block;
+	float: left;
+	cursor: pointer;
+	margin: 5px;
+	width: 8px;
+	height: 8px;
+	color: #333;
+	border-radius: 50%;
+	background-color: black;
+}
+.active {
+	border: 1.5px solid red;
+}
+.middle-left {
+	position: absolute;
+	left: 10;
+	top: 40;
+}
+.middle-right {
+	position: absolute;
+	right: 10;
+	top: 40;
+}
+.slideshow button {
+	cursor: pointer;
+	
+}
+.inline-text {
+	position: absolute;
+	top: 50%;
+	font-family: sans-serif;
+	font-size: 30;
+	font-weight: bold;
+	color: cornflowerblue;
+	float: left;
+}
+#store {
+	position: absolute;
+	top: 200;
+	width: 100%;
+	height: 100%;
+}
+#store-blog {
+	background-color: rgb(72 99 80 / 53%); 
+	color: white;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 25
+}
+#store-blog i {
+	padding: 5;
+	color: black;
+	text-align: center;
+	word-wrap: wrap;
+}
+.space {
+	background-color: antiquewhite;
+	height: 100;
+	margin: 5;
+	color: black;
+	
+}
+#time-zone {
+	position: absolute;
+	left: 35%;
+	font-size: 30;
+}
+.image-container {
+	display: flex;
+	position: absolute;
+	flex-direction: row; /* for the flex flow i.e in row or column */
+	justify-content: space-around;
+	align-items: stretch;
+	flex-wrap: wrap;
+	width: 100%;
+	color: white;
+}
+
+.column-left {
+	height: 125px;
+	width: 130;
+	
+	padding: 10 20;
+}
+.column-right {
+	
+	height: 125px;
+	width: 130;
+	
+	padding: 10 20;
+}
+.image-container img {
+	height: 125px;
+	width: 125px;
+	border-radius: 20px;
+	transition: transform 0.2s;
+	transition-delay: 0.2s; 
+}
+.image-container img:hover {
+	transform: scale(1.2);
+	overflow: hidden;
+}
+
+.bottom-section {
+	width: 100%;
+	height: 125;
+	position: relative;
+	top: 950;
+	
+}
+#faq {
+	position: absolute;
+	height: 87;
+	width: 99%;
+	background-color: black; 
+	color: white;
+	margin: 5;
+	bottom: 0;
+}
+#faq ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row; /* defines the main axis row for horizontal and column for vertical */
+	flex-wrap: wrap; /*defines if the flex elements should break i.e go to new line */
+	flex-flow: row wrap; /* flex-flow is a combination of both flex-direction and flex-wrap i.e it's a shorthand in writing them both */
+	justify-content: space-around; /* Defines how the flex elements should be aligned along the main axis */
+	align-items: stretch; /*defines how the flex elements should be aligned along the cross axis */
+	align-content: stretch; /* this defines how multi line flexs should be aligned along the cross axis */ 
+	font-size: 20;
+	float: left;
+} 
+/* for all my list items in the page */
+ul li {
+	margin: none;
+	padding: 8;
+}
+@media only screen and (min-width:768px) {
+	.slideshow {
+		display: inline-block;
+		position: relative;
+		top: 50;
+		width: 100%;
+		height: 400px;
+	
+	}
+	
+	.slides img {
+		height: 100%;
+	}
+		.dots-container {
+		position: absolute;
+		display: inline-block;
+		align-items: center;
+		padding: 3px;
+		border-radius: 20px;
+		background-color: white;
+		width: 130;
+		height: 25px;
+		top: 355;
+		right: 50%;
+	}
+
+	.dots-container .dots {
+		display: block;
+		float: left;
+		cursor: pointer;
+		margin: 5px;
+		width: 15px;
+		height: 15px;
+		color: #333;
+		border-radius: 50%;
+		background-color: black;
+	}
+	.active {
+		border: 2px solid red;
+	}
+
+	#store {
+		position: absolute;
+		top: 460;
+		width: 100%;
+		height: 100%;
+    }
+	.image-container {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+	.inline-text {
+		margin-left: 30%;
+		font-size: 50px;
+		bottom: 20;
+	}
+	.column-left {
+		width: 40%;
+		height: 500px;
+		margin-left: 50;
+	}
+	.column-right {
+	    width: 40%;
+		height: 500px;
+		margin-left: 50;
+	}
+	.image-container img {
+		height: 225px;
+		width: 400px;
+		border-radius: 20px;
+		transition: transform 0.2s;
+		transition-delay: 0.2s; 
+	}
+}
