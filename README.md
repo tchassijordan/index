@@ -11,24 +11,49 @@
 	<link rel="stylesheet" href="style2.css">
 	<script src="js.js"></script>
 	<div class="nav">
-		<a href="#home">Home<ul><li>link 1</li>
-								<li>link 2</li><li>link 3</li><li>link 4</li></ul></a>
+		<a href="#home">Home<ul><li>link 1</li><li>link 2</li><li>link 3</li><li>link 4</li></ul></a>
 		<a href="#store-blog">Store¨¨</a>
 		<a href="#faq">FAQ</a>
 		<span class="search-container"><button id="butt"></button></span>
 	</div>
 	</head>
 <body>
-	
-	<div class="slideshow">
-			<button id="demo" class="middle-left"><strong>-</strong></button>
-			<button class="middle-right"><strong>--</strong></button>
-		<div class="slides">
+	<!-- This is the slideshow section, at the moment sliding through is still manual -->
+	<div class="slideshow"> 
+			<button id="demo" class="middle-left" onclick="plusSlide(-1)"><i class="far fa-arrow-alt-circle-left"></i></button>
+			<button class="middle-right" onclick="plusSlide(1)"><i class="far fa-arrow-alt-circle-right"></i></button>
+		<div class="slides fade">
 			
-			<img src="images/dice1.jpg" alt="guitar">
+			<img src="images/musical.jpg" alt="Cake" style="width: 100%;">
 			
 		</div>
-		<div class="inline-text">Queen's Creamy Cake
+		<div class="slides fade">
+			
+			<img src="images/chocolate.jpg" alt="Cake" style="width: 100%">
+			
+		</div>
+		<div class="slides fade">
+			
+			<img src="images/cupcake3.jpg" alt="Cake" style="width: 100%">
+			
+		</div>
+		<div class="slides fade">
+			
+			<img src="images/city-church-christchurch-qy__yBHYeYo-unsplash.jpg" alt="Cake" style="width: 100%">
+			
+		</div>
+		<div class="slides fade">
+			
+			<img src="images/donuts.jpg" alt="Cake" style="width: 100%">
+			
+		</div>
+		<div class="inline-text">Queen's Creamy Cake</div>
+		<div class="dots-container">
+			<span class="dots" onclick="currentSlide(1)"></span>
+			<span class="dots" onclick="currentSlide(2)"></span>
+			<span class="dots" onclick="currentSlide(3)"></span>
+			<span class="dots" onclick="currentSlide(4)"></span>
+			<span class="dots" onclick="currentSlide(5)"></span>
 		</div>
 	</div>
 	<div id="store">
