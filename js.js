@@ -25,3 +25,8 @@ function showSlides (n) {
 	slides[slideindex - 1].style.display = "block";
 	dots[slideindex-1].className += " active";
 }
+/* This is for the search button*/
+function myDisplay {
+var click = document.getElementById("butt");
+click.style.width = "150px";
+}
