@@ -113,7 +113,7 @@ ul li:hover {
 	padding: 0px;
 	border-radius: 20px;
 	background-color: white;
-	top: 120;
+	top: 230;
 	margin-left: 50%;
 	height: 17;
 }
@@ -258,6 +258,31 @@ ul li {
 	padding: 8;
 }
 @media only screen and (min-width:768px) {
+	body {
+		background-color: black;
+		margin-left: 160px;
+		overflow-x: hidden;
+	}
+	.nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		position: fixed;
+		z-index: 1;
+		width: 160px;
+		height: 100%;
+		margin-left: -160px;
+	}
+	.search-container{
+		display: flex;
+		top: 300px;
+		right: 0;
+	
+	}
+	.search-container .text {
+		width: 0px;
+		float: left;
+	}
 	.slideshow {
 		display: inline-block;
 		position: relative;
@@ -279,7 +304,7 @@ ul li {
 		background-color: white;
 		width: 130;
 		height: 25px;
-		top: 355;
+		top: 418;
 		right: 50%;
 	}
 
@@ -331,5 +356,13 @@ ul li {
 		border-radius: 20px;
 		transition: transform 0.2s;
 		transition-delay: 0.2s; 
+	}
+}
+@media only screen and (min-width:526px) and (max-width: 767px) {
+	.column-left {
+		width: 40%;
+	}
+	.column right{
+		width: 40%;
 	}
 }
